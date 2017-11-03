@@ -44,7 +44,7 @@
    }
  ```   
 
-2. Hbase 作为支持支持数据检索、更新的Spark运行数据库
+2. Hbase 作为支持数据检索、更新的Spark运行数据库
     - bulkLoad 更新
     - bulkGet 查询，Spark SQL Join 解决Hbase 不支持Join 的问题
     - BulkDelete 数据删除
