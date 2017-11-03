@@ -97,9 +97,9 @@ class HbaseTable(@transient private val spark:SparkSession,
     * @param mkRowKey，将Row 转换为Hbase RowKey
     * @param mkHbaseRow，将Row 转换为FamiliesQualifiersValues，一棵红黑树（排序的）
     */
-  def insertElseUpdate(rdd:RDD[Row],
+  def insertElseUpdate[Row](rdd:RDD[Row],
                      mkRowKey: Row => Array[Byte],
-                     mkHbaseRow:(Array[Byte],Row) =>FamiliesQualifiersValues) = {
+                     mkHbaseRow:Row =>FamiliesQualifiersValues) = {
     hc.bulkLoadThinRows[Row](
       rdd,
       schema.getTableName,
@@ -112,13 +112,13 @@ class HbaseTable(@transient private val spark:SparkSession,
     )
   }
 
-  def tableInit(rdd:RDD[Row],
+  def tableInit[Row](rdd:RDD[Row],
                 mkRowKey: Row => Array[Byte],
-                mkHbaseRow:(Array[Byte],Row) =>FamiliesQualifiersValues) ={
+                mkHbaseRow:Row =>FamiliesQualifiersValues) ={
     // 创建表
     createTable
     // 初始化数据
-    insertElseUpdate(rdd,mkRowKey,mkHbaseRow)
+    insertElseUpdate[Row](rdd,mkRowKey,mkHbaseRow)
   }
 
   /**
