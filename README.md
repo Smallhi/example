@@ -106,13 +106,13 @@ def initDate() = {
    val ht = HbaseTable(spark,hc,schema)
   // 初始化数据测试
   ht.tableInit[Row](data,mkRowKey,mkHbaseRow)
-  // 构造Hbase Table 的 rowkey 规则
+  // 构造HbaseTable的rowkey 规则
   def mkRowKey(r:Row):Array[Byte] = {
-    // 业务要求是用 id+idtype 得Md5 作为主键
+    // 业务要求 id+idtype 的Md5 作为主键
     val rawRK = r.getAs[String]("id") + r.getAs[String]("idType")
     rowKeyByMD5(rawRK)
   }
-  // 构造Hbase Table 的 row 的规则
+  // 构造HbaseTable的row的规则
   def mkHbaseRow(r:Row):FamiliesQualifiersValues = {
     val rk = this.mkRowKey(r)
     val familyQualifiersValues = new FamiliesQualifiersValues
