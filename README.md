@@ -1,4 +1,4 @@
-# HbaseUtils
+# HbaseETL
 ## 功能
 1. Spark 快速大批量得存取 Hbase
 2. 支持隐式的RDD 调用
