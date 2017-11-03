@@ -18,7 +18,7 @@
     - 数据源为关系型数据库
     - 参考DataBaseSuit.scala 实现
 
-例如如将hive 表的数据增量写入到Hbase    
+例如将hive 表的数据增量写入到Hbase    
    
  ```scala
    def insertOrUpdate = {
