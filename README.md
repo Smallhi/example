@@ -89,6 +89,7 @@ def initDate() = {
     - 封装的初始程序
     - bulkGet
     - bulkDelete  
+    
 例如作为ETL工具操作Hbase
 
 ```scala
