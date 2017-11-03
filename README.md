@@ -129,7 +129,7 @@ def initDate() = {
 ```
 
 4. Hbase Join 问题
-    - 快速得Scan
+    - 快速的Scan
     - 使用Spark SQL解决Hbase Join 问题
  
  例如

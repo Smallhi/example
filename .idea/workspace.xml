@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db7a6abb-062b-479d-9b9f-61856d108615" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,6 +39,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="HBaseRDDFunctions.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/hbase/HBaseRDDFunctions.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="HbaseETLSuit.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/example/HbaseETLSuit.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HbaseTable.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HbaseTable.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/etl/HbaseTable.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="148" column="27" lean-forward="false" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+            <state relative-caret-position="286">
+              <caret line="129" column="30" lean-forward="false" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="30" />
               <folding>
                 <element signature="e#21#73#0" expanded="true" />
               </folding>
@@ -88,8 +100,8 @@
       <file leaf-file-name="DataBaseSuit.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/example/DataBaseSuit.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="30" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="21" selection-end-column="30" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#25#65#0" expanded="true" />
               </folding>
@@ -107,24 +119,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="324">
-                <caret line="108" column="12" lean-forward="false" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding>
-                  <marker date="1509699593146" expanded="true" signature="475:1140" ph="{...}" />
-                  <marker date="1509699593146" expanded="true" signature="546:1135" ph="(...)" />
-                  <marker date="1509699593146" expanded="true" signature="857:1054" ph="{...}" />
-                  <marker date="1509699593146" expanded="true" signature="1352:2346" ph="{...}" />
-                  <marker date="1509699593146" expanded="true" signature="1490:1623" ph="(...)" />
-                  <marker date="1509699593146" expanded="true" signature="1694:2342" ph="(...)" />
-                  <marker date="1509699593146" expanded="true" signature="2004:2255" ph="(...)" />
-                  <marker date="1509699593146" expanded="true" signature="2757:2818" ph="..." />
-                  <marker date="1509699593146" expanded="true" signature="2982:3108" ph="{...}" />
-                  <marker date="1509699593146" expanded="true" signature="3185:3570" ph="{...}" />
-                  <marker date="1509699593146" expanded="true" signature="3341:3539" ph="{...}" />
+                  <marker date="1509699646368" expanded="true" signature="475:1140" ph="{...}" />
+                  <marker date="1509699646368" expanded="true" signature="546:1135" ph="(...)" />
+                  <marker date="1509699646368" expanded="true" signature="857:1054" ph="{...}" />
+                  <marker date="1509699646368" expanded="true" signature="1350:2344" ph="{...}" />
+                  <marker date="1509699646368" expanded="true" signature="1488:1621" ph="(...)" />
+                  <marker date="1509699646368" expanded="true" signature="1692:2340" ph="(...)" />
+                  <marker date="1509699646368" expanded="true" signature="2002:2253" ph="(...)" />
+                  <marker date="1509699646368" expanded="true" signature="2755:2816" ph="..." />
+                  <marker date="1509699646368" expanded="true" signature="2980:3106" ph="{...}" />
+                  <marker date="1509699646368" expanded="true" signature="3183:3568" ph="{...}" />
+                  <marker date="1509699646368" expanded="true" signature="3339:3537" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -317,6 +329,13 @@
               <item name="org/hhl" type="cbb8eebc:String" user="org/hhl" />
               <item name="example" type="cbb8eebc:String" user="example" />
             </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="example" type="cbb8eebc:String" user="example" />
+              <item name="src/main/scala" type="cbb8eebc:String" user="src/main/scala" />
+              <item name="org/hhl" type="cbb8eebc:String" user="org/hhl" />
+              <item name="hbase" type="cbb8eebc:String" user="hbase" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -477,6 +496,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-40" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -488,10 +508,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31043664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31043664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24920128" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -559,17 +579,17 @@
           <first_editor relative-caret-position="19">
             <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
             <folding>
-              <marker date="1509699593146" expanded="true" signature="475:1140" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="546:1135" ph="(...)" />
-              <marker date="1509699593146" expanded="true" signature="857:1054" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="1352:2346" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="1490:1623" ph="(...)" />
-              <marker date="1509699593146" expanded="true" signature="1694:2342" ph="(...)" />
-              <marker date="1509699593146" expanded="true" signature="2004:2255" ph="(...)" />
-              <marker date="1509699593146" expanded="true" signature="2757:2818" ph="..." />
-              <marker date="1509699593146" expanded="true" signature="2982:3108" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="3185:3570" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="3341:3539" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="475:1140" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="546:1135" ph="(...)" />
+              <marker date="1509699646368" expanded="true" signature="857:1054" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="1350:2344" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="1488:1621" ph="(...)" />
+              <marker date="1509699646368" expanded="true" signature="1692:2340" ph="(...)" />
+              <marker date="1509699646368" expanded="true" signature="2002:2253" ph="(...)" />
+              <marker date="1509699646368" expanded="true" signature="2755:2816" ph="..." />
+              <marker date="1509699646368" expanded="true" signature="2980:3106" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="3183:3568" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="3339:3537" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -581,7 +601,7 @@
         <state relative-caret-position="209">
           <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -666,17 +686,17 @@
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding>
-              <marker date="1509699593146" expanded="true" signature="475:1140" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="546:1135" ph="(...)" />
-              <marker date="1509699593146" expanded="true" signature="857:1054" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="1352:2346" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="1490:1623" ph="(...)" />
-              <marker date="1509699593146" expanded="true" signature="1694:2342" ph="(...)" />
-              <marker date="1509699593146" expanded="true" signature="2004:2255" ph="(...)" />
-              <marker date="1509699593146" expanded="true" signature="2757:2818" ph="..." />
-              <marker date="1509699593146" expanded="true" signature="2982:3108" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="3185:3570" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="3341:3539" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="475:1140" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="546:1135" ph="(...)" />
+              <marker date="1509699646368" expanded="true" signature="857:1054" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="1350:2344" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="1488:1621" ph="(...)" />
+              <marker date="1509699646368" expanded="true" signature="1692:2340" ph="(...)" />
+              <marker date="1509699646368" expanded="true" signature="2002:2253" ph="(...)" />
+              <marker date="1509699646368" expanded="true" signature="2755:2816" ph="..." />
+              <marker date="1509699646368" expanded="true" signature="2980:3106" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="3183:3568" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="3339:3537" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -819,16 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/hbase/HBaseRDDFunctions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/hbase/FamiliesQualifiersValues.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -858,16 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/example/DataBaseSuit.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="30" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="e#25#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/etl/HbaseConstants.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -886,16 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/etl/HbaseTable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="148" column="27" lean-forward="false" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
-          <folding>
-            <element signature="e#21#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/example/HbaseETLSuit.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
@@ -909,20 +899,20 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="324">
-            <caret line="108" column="12" lean-forward="false" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding>
-              <marker date="1509699593146" expanded="true" signature="475:1140" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="546:1135" ph="(...)" />
-              <marker date="1509699593146" expanded="true" signature="857:1054" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="1352:2346" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="1490:1623" ph="(...)" />
-              <marker date="1509699593146" expanded="true" signature="1694:2342" ph="(...)" />
-              <marker date="1509699593146" expanded="true" signature="2004:2255" ph="(...)" />
-              <marker date="1509699593146" expanded="true" signature="2757:2818" ph="..." />
-              <marker date="1509699593146" expanded="true" signature="2982:3108" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="3185:3570" ph="{...}" />
-              <marker date="1509699593146" expanded="true" signature="3341:3539" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="475:1140" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="546:1135" ph="(...)" />
+              <marker date="1509699646368" expanded="true" signature="857:1054" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="1350:2344" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="1488:1621" ph="(...)" />
+              <marker date="1509699646368" expanded="true" signature="1692:2340" ph="(...)" />
+              <marker date="1509699646368" expanded="true" signature="2002:2253" ph="(...)" />
+              <marker date="1509699646368" expanded="true" signature="2755:2816" ph="..." />
+              <marker date="1509699646368" expanded="true" signature="2980:3106" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="3183:3568" ph="{...}" />
+              <marker date="1509699646368" expanded="true" signature="3339:3537" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -932,17 +922,47 @@
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1509699593146" expanded="true" signature="475:1140" ph="{...}" />
-            <marker date="1509699593146" expanded="true" signature="546:1135" ph="(...)" />
-            <marker date="1509699593146" expanded="true" signature="857:1054" ph="{...}" />
-            <marker date="1509699593146" expanded="true" signature="1352:2346" ph="{...}" />
-            <marker date="1509699593146" expanded="true" signature="1490:1623" ph="(...)" />
-            <marker date="1509699593146" expanded="true" signature="1694:2342" ph="(...)" />
-            <marker date="1509699593146" expanded="true" signature="2004:2255" ph="(...)" />
-            <marker date="1509699593146" expanded="true" signature="2757:2818" ph="..." />
-            <marker date="1509699593146" expanded="true" signature="2982:3108" ph="{...}" />
-            <marker date="1509699593146" expanded="true" signature="3185:3570" ph="{...}" />
-            <marker date="1509699593146" expanded="true" signature="3341:3539" ph="{...}" />
+            <marker date="1509699646368" expanded="true" signature="475:1140" ph="{...}" />
+            <marker date="1509699646368" expanded="true" signature="546:1135" ph="(...)" />
+            <marker date="1509699646368" expanded="true" signature="857:1054" ph="{...}" />
+            <marker date="1509699646368" expanded="true" signature="1350:2344" ph="{...}" />
+            <marker date="1509699646368" expanded="true" signature="1488:1621" ph="(...)" />
+            <marker date="1509699646368" expanded="true" signature="1692:2340" ph="(...)" />
+            <marker date="1509699646368" expanded="true" signature="2002:2253" ph="(...)" />
+            <marker date="1509699646368" expanded="true" signature="2755:2816" ph="..." />
+            <marker date="1509699646368" expanded="true" signature="2980:3106" ph="{...}" />
+            <marker date="1509699646368" expanded="true" signature="3183:3568" ph="{...}" />
+            <marker date="1509699646368" expanded="true" signature="3339:3537" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/hbase/HBaseRDDFunctions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/example/DataBaseSuit.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/org/hhl/etl/HbaseTable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="129" column="30" lean-forward="false" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="30" />
+          <folding>
+            <element signature="e#21#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
