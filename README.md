@@ -90,6 +90,7 @@ def initDate() = {
     - bulkGet
     - bulkDelete  
 例如作为ETL工具操作Hbase
+
 ```scala
 // Hbase 表定义
   val nameSpace = "lenovo"
@@ -129,6 +130,8 @@ def initDate() = {
 4. Hbase Join 问题
     - 快速得Scan
     - 使用Spark SQL解决Hbase Join 问题
+例如
+
 ```scala
  // 快速Scan 获取Hbase 数据
  ht.tableInit[Row](data, mkRowKey, mkHbaseRow)
