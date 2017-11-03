@@ -1,7 +1,7 @@
 package org.hhl.example
 
 import org.apache.hadoop.hbase.{CellUtil, TableName}
-import org.apache.hadoop.hbase.client.{Delete, Get, Result}
+import org.apache.hadoop.hbase.client.{Delete, Get, Put, Result}
 import org.apache.hadoop.hbase.util.Bytes
 import org.apache.spark.sql.SparkSession
 import org.hhl.hbase._
@@ -75,6 +75,7 @@ object HbaseSuit extends RowKey{
       },
       10
     )
+  }
 
     def bulkGet = {
       val rdd = spark.sql("select * from hive.graph").map(x => {
@@ -109,7 +110,7 @@ object HbaseSuit extends RowKey{
             ("NONE")
           }
         }
-      ).filter(x => (x != "NONE")).toDF("sid").distinct()
+      ).filter(x => (x != "NONE"))
 
       val t = getRdd.count()
       println(t)
@@ -139,8 +140,32 @@ object HbaseSuit extends RowKey{
         1000)
     }
 
+    def bulkPut = {
+      val rdd_put = spark.sql("select * from hive.graph").map(x => {
+        val sid = x.getString(0)
+        val id = x.getString(1)
+        val idType = x.getString(3)
+        (sid, id, idType)
+      }).repartition(100).rdd
+      hc.bulkPut[(String,String,String)](
+        rdd_put,
+        TableName.valueOf(tableName),
+        put => {
+          val rowKey = rowKeyByMD5(put._2, put._3)
+          val p = new Put(rowKey)
+          val family: Array[Byte] = Bytes.toBytes("s")
+          val pk = put._2 + "|" + put._3
+          val pk_v = Bytes.toBytes(pk)
+          p.addColumn(family,Bytes.toBytes("pk"),pk_v)
+          p.addColumn(family,Bytes.toBytes("s"),Bytes.toBytes(put._1))
+          p
+        })
+    }
 
+  def rddImplicitsCall = {
+    import org.hhl.hbase.HBaseRDDFunctions._
+    val rdd = spark.sql("select * from graph").map(x=>(rowKeyByMD5(x.getString(1),x.getString(1)))).
+      rdd.hbaseBulkDelete(hc,TableName.valueOf("lenovo:GRAHP"),r =>new Delete(r),1000)
   }
-
 
 }
