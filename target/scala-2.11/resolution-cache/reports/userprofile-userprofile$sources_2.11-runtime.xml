@@ -7,12 +7,12 @@
 		revision="1.0"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20171023200112"/>
+		date="20171023202435"/>
 	<dependencies>
 		<module organisation="org.apache.hbase" name="hbase-hadoop2-compat">
-			<revision name="1.2.0" status="release" pubdate="20160503170557" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="92">
+			<revision name="1.2.0" status="release" pubdate="20160503170557" resolver="aliyun" artresolver="aliyun" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="91">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="27834" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-hadoop2-compat/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-hadoop2-compat/1.2.0/hbase-hadoop2-compat-1.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="7592" time="153" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-hadoop2-compat/ivy-1.2.0.xml" searched="true" original-local-location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-hadoop2-compat/ivy-1.2.0.xml.original" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-hadoop2-compat/1.2.0/hbase-hadoop2-compat-1.2.0.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hbase-hadoop2-compat" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="75319" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-hadoop2-compat/srcs/hbase-hadoop2-compat-1.2.0-sources.jar">
@@ -58,7 +58,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-common">
-			<revision name="2.5.1" status="release" pubdate="20160503170602" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="87">
+			<revision name="2.5.1" status="release" pubdate="20160503170602" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="86">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="35764" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hadoop/hadoop-common/ivy-2.5.1.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hadoop/hadoop-common/2.5.1/hadoop-common-2.5.1.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="2.5.1" rev-constraint-default="2.5.1" rev-constraint-dynamic="2.5.1" callerrev="1.0"/>
@@ -70,7 +70,7 @@
 			</revision>
 		</module>
 		<module organisation="commons-el" name="commons-el">
-			<revision name="1.0" status="release" pubdate="20051109062050" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jakarta.apache.org/commons/el/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="94">
+			<revision name="1.0" status="release" pubdate="20051109062050" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jakarta.apache.org/commons/el/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="93">
 				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
 				<metadata-artifact status="no" details="" size="3096" time="0" location="/Users/hhl/.ivy2/cache/commons-el/commons-el/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-el/commons-el/1.0/commons-el-1.0.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
@@ -82,7 +82,7 @@
 			</revision>
 		</module>
 		<module organisation="commons-net" name="commons-net">
-			<revision name="3.1" status="release" pubdate="20120215024231" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="85">
+			<revision name="3.1" status="release" pubdate="20120215024231" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="84">
 				<metadata-artifact status="no" details="" size="8006" time="0" location="/Users/hhl/.ivy2/cache/commons-net/commons-net/ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="1.0"/>
 				<artifacts>
@@ -93,7 +93,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-math3">
-			<revision name="3.1.1" status="release" pubdate="20130110001459" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/math/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="86">
+			<revision name="3.1.1" status="release" pubdate="20130110001459" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/math/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="85">
 				<metadata-artifact status="no" details="" size="8117" time="0" location="/Users/hhl/.ivy2/cache/org.apache.commons/commons-math3/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="1.0"/>
 				<artifacts>
@@ -104,9 +104,9 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hbase" name="hbase-server">
-			<revision name="1.2.0" status="release" pubdate="20160503170556" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="73">
+			<revision name="1.2.0" status="release" pubdate="20160503170556" resolver="aliyun" artresolver="aliyun" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="73">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="34538" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-server/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-server/1.2.0/hbase-server-1.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="32095" time="570" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-server/ivy-1.2.0.xml" searched="true" original-local-location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-server/ivy-1.2.0.xml.original" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-server/1.2.0/hbase-server-1.2.0.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hbase-server" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2671829" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-server/srcs/hbase-server-1.2.0-sources.jar">
@@ -116,7 +116,7 @@
 			</revision>
 		</module>
 		<module organisation="org.owasp.esapi" name="esapi">
-			<revision name="2.1.0" status="release" pubdate="20130903091759" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.esapi.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="89">
+			<revision name="2.1.0" status="release" pubdate="20130903091759" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.esapi.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="88">
 				<license name="BSD" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<license name="Creative Commons 3.0 BY-SA" url="http://creativecommons.org/licenses/by-sa/3.0/"/>
 				<metadata-artifact status="no" details="" size="5266" time="0" location="/Users/hhl/.ivy2/cache/org.owasp.esapi/esapi/ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/owasp/esapi/esapi/2.1.0/esapi-2.1.0.pom"/>
@@ -151,9 +151,9 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hbase" name="hbase-client">
-			<revision name="1.2.0" status="release" pubdate="20160503170557" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="74">
+			<revision name="1.2.0" status="release" pubdate="20160503170557" resolver="aliyun" artresolver="aliyun" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="74">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="29203" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-client/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-client/1.2.0/hbase-client-1.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="12517" time="197" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-client/ivy-1.2.0.xml" searched="true" original-local-location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-client/ivy-1.2.0.xml.original" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-client/1.2.0/hbase-client-1.2.0.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hbase-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="890632" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-client/srcs/hbase-client-1.2.0-sources.jar">
@@ -163,9 +163,9 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hbase" name="hbase-procedure">
-			<revision name="1.2.0" status="release" pubdate="20160503170554" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="96">
+			<revision name="1.2.0" status="release" pubdate="20160503170554" resolver="aliyun" artresolver="aliyun" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="95">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="26831" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-procedure/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-procedure/1.2.0/hbase-procedure-1.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="5649" time="176" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-procedure/ivy-1.2.0.xml" searched="true" original-local-location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-procedure/ivy-1.2.0.xml.original" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-procedure/1.2.0/hbase-procedure-1.2.0.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hbase-procedure" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="71974" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-procedure/srcs/hbase-procedure-1.2.0-sources.jar">
@@ -421,7 +421,7 @@
 			</revision>
 		</module>
 		<module organisation="javax.xml.bind" name="jaxb-api">
-			<revision name="2.2.2" status="release" pubdate="20101213114445" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://jaxb.dev.java.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="95">
+			<revision name="2.2.2" status="release" pubdate="20101213114445" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://jaxb.dev.java.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="94">
 				<license name="CDDL 1.1" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
 				<license name="GPL2 w/ CPE" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
 				<metadata-artifact status="no" details="" size="3081" time="0" location="/Users/hhl/.ivy2/cache/javax.xml.bind/jaxb-api/ivy-2.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.pom"/>
@@ -494,7 +494,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-compress">
-			<revision name="1.4.1" status="release" pubdate="20120522125732" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/compress/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="91">
+			<revision name="1.4.1" status="release" pubdate="20120522125732" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/compress/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="90">
 				<metadata-artifact status="no" details="" size="8166" time="0" location="/Users/hhl/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.0"/>
 				<artifacts>
@@ -725,9 +725,9 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hbase" name="hbase-prefix-tree">
-			<revision name="1.2.0" status="release" pubdate="20160503170556" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+			<revision name="1.2.0" status="release" pubdate="20160503170556" resolver="aliyun" artresolver="aliyun" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="27099" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-prefix-tree/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-prefix-tree/1.2.0/hbase-prefix-tree-1.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="7100" time="210" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-prefix-tree/ivy-1.2.0.xml" searched="true" original-local-location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-prefix-tree/ivy-1.2.0.xml.original" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-prefix-tree/1.2.0/hbase-prefix-tree-1.2.0.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hbase-prefix-tree" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="91462" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-prefix-tree/srcs/hbase-prefix-tree-1.2.0-sources.jar">
@@ -737,7 +737,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-all">
-			<revision name="4.0.23.Final" status="release" pubdate="20140816020640" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="93">
+			<revision name="4.0.23.Final" status="release" pubdate="20140816020640" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="92">
 				<metadata-artifact status="no" details="" size="15751" time="0" location="/Users/hhl/.ivy2/cache/io.netty/netty-all/ivy-4.0.23.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="4.0.23.Final" rev-constraint-default="4.0.23.Final" rev-constraint-dynamic="4.0.23.Final" callerrev="1.0"/>
 				<artifacts>
@@ -748,9 +748,9 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hbase" name="hbase-hadoop-compat">
-			<revision name="1.2.0" status="release" pubdate="20160503170554" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="50">
+			<revision name="1.2.0" status="release" pubdate="20160503170554" resolver="aliyun" artresolver="aliyun" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="50">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="26468" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-hadoop-compat/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-hadoop-compat/1.2.0/hbase-hadoop-compat-1.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="5230" time="244" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-hadoop-compat/ivy-1.2.0.xml" searched="true" original-local-location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-hadoop-compat/ivy-1.2.0.xml.original" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-hadoop-compat/1.2.0/hbase-hadoop-compat-1.2.0.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hbase-hadoop-compat" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43771" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-hadoop-compat/srcs/hbase-hadoop-compat-1.2.0-sources.jar">
@@ -772,9 +772,9 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hbase" name="hbase-common">
-			<revision name="1.2.0" status="release" pubdate="20160503170557" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="52">
+			<revision name="1.2.0" status="release" pubdate="20160503170557" resolver="aliyun" artresolver="aliyun" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="52">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="27963" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-common/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-common/1.2.0/hbase-common-1.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="15853" time="385" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-common/ivy-1.2.0.xml" searched="true" original-local-location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-common/ivy-1.2.0.xml.original" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-common/1.2.0/hbase-common-1.2.0.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hbase-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="444965" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-common/srcs/hbase-common-1.2.0-sources.jar">
@@ -784,7 +784,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.htrace" name="htrace-core">
-			<revision name="3.1.0-incubating" status="release" pubdate="20150116033701" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://incubator.apache.org/projects/htrace.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="97">
+			<revision name="3.1.0-incubating" status="release" pubdate="20150116033701" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://incubator.apache.org/projects/htrace.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="96">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="5150" time="0" location="/Users/hhl/.ivy2/cache/org.apache.htrace/htrace-core/ivy-3.1.0-incubating.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/htrace/htrace-core/3.1.0-incubating/htrace-core-3.1.0-incubating.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="3.1.0-incubating" rev-constraint-default="3.1.0-incubating" rev-constraint-dynamic="3.1.0-incubating" callerrev="1.0"/>
@@ -807,7 +807,7 @@
 			</revision>
 		</module>
 		<module organisation="org.mortbay.jetty" name="servlet-api">
-			<revision name="2.5-20081211" status="release" pubdate="20081212013400" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="99">
+			<revision name="2.5-20081211" status="release" pubdate="20081212013400" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="98">
 				<metadata-artifact status="no" details="" size="2982" time="0" location="/Users/hhl/.ivy2/cache/org.mortbay.jetty/servlet-api/ivy-2.5-20081211.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="2.5-20081211" rev-constraint-default="2.5-20081211" rev-constraint-dynamic="2.5-20081211" callerrev="1.0"/>
 				<artifacts>
@@ -840,9 +840,9 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hbase" name="hbase-protocol">
-			<revision name="1.2.0" status="release" pubdate="20160503170555" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="62">
+			<revision name="1.2.0" status="release" pubdate="20160503170555" resolver="aliyun" artresolver="aliyun" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="62">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="26533" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-protocol/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-protocol/1.2.0/hbase-protocol-1.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="8562" time="455" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-protocol/ivy-1.2.0.xml" searched="true" original-local-location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-protocol/ivy-1.2.0.xml.original" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-protocol/1.2.0/hbase-protocol-1.2.0.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hbase-protocol" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="866143" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-protocol/srcs/hbase-protocol-1.2.0-sources.jar">
@@ -875,9 +875,9 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hbase" name="hbase-annotations">
-			<revision name="1.2.0" status="release" pubdate="20160503170557" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+			<revision name="1.2.0" status="release" pubdate="20160503170557" resolver="aliyun" artresolver="aliyun" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="25718" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-annotations/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-annotations/1.2.0/hbase-annotations-1.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="2320" time="143" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-annotations/ivy-1.2.0.xml" searched="true" original-local-location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-annotations/ivy-1.2.0.xml.original" origin-is-local="false" origin-location="http://maven.aliyun.com/nexus/content/groups/public/org/apache/hbase/hbase-annotations/1.2.0/hbase-annotations-1.2.0.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hbase-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="14658" time="0" location="/Users/hhl/.ivy2/cache/org.apache.hbase/hbase-annotations/srcs/hbase-annotations-1.2.0-sources.jar">
@@ -910,7 +910,7 @@
 			</revision>
 		</module>
 		<module organisation="com.github.stephenc.findbugs" name="findbugs-annotations">
-			<revision name="1.3.9-1" status="release" pubdate="20110420192134" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://stephenc.github.com/findbugs-annotations" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="88">
+			<revision name="1.3.9-1" status="release" pubdate="20110420192134" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://stephenc.github.com/findbugs-annotations" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="87">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3483" time="0" location="/Users/hhl/.ivy2/cache/com.github.stephenc.findbugs/findbugs-annotations/ivy-1.3.9-1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/stephenc/findbugs/findbugs-annotations/1.3.9-1/findbugs-annotations-1.3.9-1.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.3.9-1" rev-constraint-default="1.3.9-1" rev-constraint-dynamic="1.3.9-1" callerrev="1.0"/>
@@ -1016,7 +1016,7 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="slf4j-log4j12">
-			<revision name="1.7.5" status="release" pubdate="20130326045252" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="98">
+			<revision name="1.7.5" status="release" pubdate="20130326045252" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="97">
 				<metadata-artifact status="no" details="" size="4653" time="0" location="/Users/hhl/.ivy2/cache/org.slf4j/slf4j-log4j12/ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.0"/>
 				<artifacts>
@@ -1057,16 +1057,6 @@
 					<artifact name="guava" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1002184" time="0" location="/Users/hhl/.ivy2/cache/com.google.guava/guava/srcs/guava-12.0.1-sources.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/guava/guava/12.0.1/guava-12.0.1-sources.jar"/>
 					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="com.google.code.findbugs" name="jsr305">
-			<revision name="1.3.9" status="release" pubdate="20090825062822" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="84">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="2393" time="0" location="/Users/hhl/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-1.3.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.pom"/>
-				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1.3.9" rev-constraint-default="1.3.9" rev-constraint-dynamic="1.3.9" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="failed" details="" size="0" time="0"/>
 				</artifacts>
 			</revision>
 		</module>
@@ -1151,7 +1141,7 @@
 			</revision>
 		</module>
 		<module organisation="javax.inject" name="javax.inject">
-			<revision name="1" status="release" pubdate="20091014073500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="90">
+			<revision name="1" status="release" pubdate="20091014073500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="89">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2604" time="0" location="/Users/hhl/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
 				<caller organisation="userprofile" name="userprofile$sources_2.11" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.0"/>
