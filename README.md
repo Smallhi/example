@@ -86,3 +86,6 @@ def initDate() = {
 `    
     
 
+3. 声明
+    - 该ETL 工具改造自 hbase-Spark 并对其中BulkLoad 方法重新实现
+    - 如有任务问题请联系作者邮箱 huanghl0817@gmail.com
