@@ -46,7 +46,7 @@ class DataBaseSuit extends  RowKey{
       r => {
         val rawPK = new StringBuilder
         for(c<- table_PK) rawPK.append(r.getAs[String](c))
-        val rk = Bytes.toBytes(rawPK.toString)
+        val rk = rowKeyByMD5(rawPK.toString)
         val familyQualifiersValues = new FamiliesQualifiersValues
 
         val fq = familyQualifierToByte
