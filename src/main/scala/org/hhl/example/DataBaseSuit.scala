@@ -28,7 +28,7 @@ class DataBaseSuit extends  RowKey{
 
   def familyQualifierToByte:Set[(Array[Byte],Array[Byte],String)] ={
     if (columnFamily == null || columnNames == null) throw new Exception("null can't be convert to Bytes")
-    columnFamily.map(x=>Bytes.toBytes(x)).zip(columnNames.map(x=>(Bytes.toBytes(x),x))).toSet
+    columnFamily.map(x=>Bytes.toBytes(x)).zip(columnNames.map(x=>(Bytes.toBytes(x),x))).map(x=>(x._1,x._2._1,x._2._2)).toSet
   }
 
   def createTable = {

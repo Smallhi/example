@@ -78,6 +78,7 @@ object HbaseSuit extends RowKey{
   }
 
     def bulkGet = {
+      import spark.implicits._
       val rdd = spark.sql("select * from hive.graph").map(x => {
         val sid = x.getString(0)
         val id = x.getString(1)
@@ -119,6 +120,7 @@ object HbaseSuit extends RowKey{
     }
 
     def bulkDelete = {
+      import spark.implicits._
       val rdd = spark.sql("select * from hive.graph").map(x => {
         val id = x.getString(1)
         val idType = x.getString(3)
@@ -140,6 +142,7 @@ object HbaseSuit extends RowKey{
     }
 
     def bulkPut = {
+      import spark.implicits._
       val rdd_put = spark.sql("select * from hive.graph").map(x => {
         val sid = x.getString(0)
         val id = x.getString(1)
@@ -163,6 +166,7 @@ object HbaseSuit extends RowKey{
 
   def rddImplicitsCall = {
     import org.hhl.hbase.HBaseRDDFunctions._
+    import spark.implicits._
     val rdd = spark.sql("select * from graph").map(x=>(rowKeyByMD5(x.getString(1),x.getString(1)))).
       rdd.hbaseBulkDelete(hc,TableName.valueOf("lenovo:GRAHP"),r =>new Delete(r),1000)
   }
