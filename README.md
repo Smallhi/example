@@ -130,7 +130,8 @@ def initDate() = {
 4. Hbase Join 问题
     - 快速得Scan
     - 使用Spark SQL解决Hbase Join 问题
-例如
+ 
+ 例如
 
 ```scala
  // 快速Scan 获取Hbase 数据
@@ -146,6 +147,6 @@ def initDate() = {
 
 ```
 
-##声明
+## 声明
 1. 该ETL工具改造自 [hbase-Spark](https://github.com/apache/hbase/tree/master/hbase-spark) 并对其中BulkLoad 方法重新实现
 2. 如有任务问题请联系作者邮箱 huanghl0817@gmail.com
