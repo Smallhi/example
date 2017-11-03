@@ -8,7 +8,7 @@ import AssemblyKeys._
 
 assemblySettings
 
-name := "UserProfile"
+name := "HbaseETL"
 
 version := "1.0"
 

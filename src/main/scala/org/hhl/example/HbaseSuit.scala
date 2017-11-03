@@ -120,11 +120,10 @@ object HbaseSuit extends RowKey{
 
     def bulkDelete = {
       val rdd = spark.sql("select * from hive.graph").map(x => {
-        val sid = x.getString(0)
         val id = x.getString(1)
-        val idtype = x.getString(3)
+        val idType = x.getString(3)
         //Bytes.toBytes(sid)
-        rowKeyByMD5(id,idtype)
+        rowKeyByMD5(id,idType)
       }).limit(20000000)
         //.sort() sort 后 repartition sort 可能会失效
         .repartition(100)
