@@ -7,7 +7,7 @@
 在一个 3台 64c,128G 内存上的hbase 集群上测试：
 1. BulkLoad 一个40G 文件 4分钟（regions = 50实际时间和region 个数有关）
 2. bulkGet 100000000 条数据从1 的表中时间为 1 分钟
-3. bulkDelte 10000000 调数据从1 的表中时间未 1 分钟
+3. bulkDelte 10000000 调数据从1 的表中时间为 1 分钟
 ## 使用方法
  sbt 打包引入到项目中，参照 HbaseSuit 实现
  
