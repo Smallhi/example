@@ -20,7 +20,7 @@
 
 例如如将hive 表的数据增量写入到Hbase    
    
- `
+ ```scala
    def insertOrUpdate = {
      val rdd = spark.read.table("").rdd
      hc.bulkLoadThinRows[Row](rdd,
@@ -41,7 +41,7 @@
        },
        10)
    }
- `   
+ ```   
 
 2. Hbase 作为支持支持数据检索、更新的Spark运行数据库
     - bulkLoad 更新
@@ -51,7 +51,7 @@
     
 例如向Hbase 批量导入数据
 
-`
+```scala
 def initDate() = {
     // 清空，并重新创建表
     createTable
@@ -83,7 +83,7 @@ def initDate() = {
       10
     )
   }
-`    
+```    
     
 
 3. 声明
