@@ -16,11 +16,73 @@
 1. Hbase 作为前端数据快速检索的数据库
     - 数据源为hive 表
     - 数据源为关系型数据库
-    
+    - 参考DataBaseSuit.scala 实现
+
+例如如将hive 表的数据增量写入到Hbase    
+   
+ `
+   def insertOrUpdate = {
+     val rdd = spark.read.table("").rdd
+     hc.bulkLoadThinRows[Row](rdd,
+       tableName,
+       r => {
+         val rawPK = new StringBuilder
+         for(c<- table_PK) rawPK.append(r.getAs[String](c))
+         val rk = Bytes.toBytes(rawPK.toString)
+         val familyQualifiersValues = new FamiliesQualifiersValues
+         val fq = familyQualifierToByte
+         for(c<- fq) {
+           val family = c._1
+           val qualifier = c._2
+           val value = Bytes.toBytes(r.getAs[String](c._3))
+           familyQualifiersValues += (family, qualifier, value)
+         }
+         (new ByteArrayWrapper(rk), familyQualifiersValues)
+       },
+       10)
+   }
+ `   
 
 2. Hbase 作为支持支持数据检索、更新的Spark运行数据库
     - bulkLoad 更新
     - bulkGet 查询，Spark SQL Join 解决Hbase 不支持Join 的问题
     - BulkDelete 数据删除
+    - 参考 HbaseSuit.scala 实现
+    
+例如向Hbase 批量导入数据
+
+`
+def initDate() = {
+    // 清空，并重新创建表
+    createTable
+    // 准备数据，rdd 处理
+    import spark.implicits._
+    val rdd = spark.sql("select * from hive.graph").map(x => {
+      val sid = x.getString(0)
+      val id = x.getString(1)
+      val idType = x.getString(3)
+      (sid, id, idType)
+    }).rdd
+    // bulk load
+    hc.bulkLoadThinRows[(String, String, String)](rdd,
+      "lenovo:GRAPH",
+      t => {
+        val rowKey = rowKeyByMD5(t._2, t._3)
+        val familyQualifiersValues = new FamiliesQualifiersValues
+        val pk = t._2 + "|" + t._3
+        // Hbase 存入两列，一列 PK 存 业务主键，一列 s 存 superid
+        val column = List(("pk", pk), ("s", t._1))
+        column.foreach(f => {
+          val family: Array[Byte] = Bytes.toBytes(columnFamily.head)
+          val qualifier = Bytes.toBytes(f._1)
+          val value: Array[Byte] = Bytes.toBytes(f._2)
+          familyQualifiersValues += (family, qualifier, value)
+        })
+        (new ByteArrayWrapper(rowKey), familyQualifiersValues)
+      },
+      10
+    )
+  }
+`    
     
 
