@@ -441,6 +441,40 @@ class HBaseContext(@transient sc: SparkContext,
     }
   }
 
+  def BulkPartitionedSortedGet[T, U: ClassTag](tableName: TableName,
+                              batchSize: Integer,
+                              rdd: RDD[T],
+                              makeRowKey:(T) => (ByteArrayWrapper,ByteArrayWrapper),
+                              makeGet: (T) => Get,
+                              convertResult: (Result) => U): RDD[U] = {
+    val conn = HBaseConnectionCache.getConnection(config)
+    val regionLocator = conn.getRegionLocator(tableName)
+    val startKeys = regionLocator.getStartKeys
+    if (startKeys.length == 0) {
+      logInfo("Table " + tableName.toString + " was not found")
+    }
+    val regionPartitioner = new BulkPartitioner(startKeys,10)
+
+    val sortRDD = rdd.map(r => makeRowKey(r)).keyBy(_._1)
+      .repartitionAndSortWithinPartitions(regionPartitioner).map(_._1)
+
+    bulkGet[ByteArrayWrapper,U](tableName,batchSize,sortRDD,
+      r => new Get(r.value),convertResult)
+
+    // fixme 1. 是否可行？2. 是否会数据倾斜？ 3，写法是否合理？
+
+  }
+
+  /**
+    * Ideal use case: Larger batches with table that span many Region Servers
+    *Anti-Pattern: Not the best for huge bulk loads and may be over kill for simple smaller bulk puts/mutations.
+    * @param rdd
+    * @param tableName
+    * @param mapFunction
+    * @param numFilesPerRegionPerFamily
+    * @tparam T
+    */
+
   def bulkLoadThinRows[T](rdd:RDD[T],
                           tableName: String,
                           mapFunction: (T) => (ByteArrayWrapper, FamiliesQualifiersValues),
@@ -453,7 +487,7 @@ class HBaseContext(@transient sc: SparkContext,
     if (startKeys.length == 0) {
       logInfo("Table " + tableName.toString + " was not found")
     }
-    val regionSplitPartitioner = new BulkLoadPartitioner(startKeys,numFilesPerRegionPerFamily)
+    val regionSplitPartitioner = new BulkPartitioner(startKeys,numFilesPerRegionPerFamily)
 
     val sortRDD = rdd.map( r => mapFunction(r))
       .repartitionAndSortWithinPartitions(regionSplitPartitioner).flatMap(x=>{

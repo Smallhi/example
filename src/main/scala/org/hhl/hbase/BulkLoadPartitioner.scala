@@ -31,7 +31,7 @@ import org.apache.spark.Partitioner
  * @param startKeys   The start keys for the given table
  */
 @InterfaceAudience.Public
-class BulkLoadPartitioner(startKeys:Array[Array[Byte]],numFilesPerRegionPerFamily: Int)
+class BulkPartitioner(startKeys:Array[Array[Byte]],numFilesPerRegionPerFamily: Int)
   extends Partitioner {
   // when table not exist, startKeys = Byte[0][]
   override def numPartitions: Int = if (startKeys.length == 0) numFilesPerRegionPerFamily else startKeys.length

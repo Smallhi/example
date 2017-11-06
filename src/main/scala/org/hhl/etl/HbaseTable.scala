@@ -6,7 +6,7 @@ import org.apache.hadoop.hbase.util.Bytes
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{Row, SparkSession}
 import org.hhl.etl.HbaseTable.Schema
-import org.hhl.hbase.{ByteArrayWrapper, FamiliesQualifiersValues, HBaseContext, HbaseHelper}
+import org.hhl.hbase._
 
 import scala.collection.mutable.ListBuffer
 
@@ -38,6 +38,15 @@ class HbaseTable(@transient private val spark:SparkSession,
       hbaseHelper.createHTable(connection, schema.getTableName, schema.regionNumbers, schema.columnFamily.toArray)
   })
 }
+
+  def regionPartitioner = {
+    val regionLocator =  hbaseHelper.getConnection.getRegionLocator(TableName)
+    val startKeys = regionLocator.getStartKeys
+    if (startKeys.length == 0) {
+      //println("Table " + regionLocator + " was not found")
+    }
+     new BulkPartitioner(startKeys,10)
+  }
 
   /**
     *
